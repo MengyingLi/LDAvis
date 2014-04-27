@@ -264,7 +264,7 @@ $.extend(scatterOutputBinding, {
             .style("opacity", 0.3)
             .style("fill", function(d) { return color(d.cluster); })
             // circle sizes should get smaller as the # of topics increases
-            .attr("r", function(d) { return (400/k)*Math.sqrt(d.Freq) ; })  
+            .attr("r", function(d) { return (200/k)*Math.sqrt(d.Freq) ; })  
             .attr("cx", function(d) { return (xScale(+d.x)); })
             .attr("cy", function(d) { return (yScale(+d.y)); })
             .on("mouseover", function(d) {
