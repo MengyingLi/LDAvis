@@ -683,7 +683,7 @@ function text_on(d) {
     d3.selectAll(".dot")
 	.data(dat2)
 	.transition()
-        .attr("r", function(d) { return (400/k)*Math.sqrt(d.Freq); });
+        .attr("r", function(d) { return (200/k)*Math.sqrt(d.Freq); });
 }
 
 function text_off() {
@@ -695,6 +695,6 @@ function text_off() {
     d3.selectAll(".dot")
 	.data(mdsData)
 	.transition()
-        .attr("r", function(d) { return (400/k)*Math.sqrt(d.Freq); });
+        .attr("r", function(d) { return (200/k)*Math.sqrt(d.Freq); });
 }
 
